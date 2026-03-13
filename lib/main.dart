@@ -5,9 +5,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final theme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
-    brightness: Brightness.dark,
-    seedColor: const Color.fromARGB(255, 131, 57, 0),
-    background: const Color.fromARGB(255, 35, 35, 35)
+    brightness: Brightness.light,
+    seedColor: const Color.fromARGB(255, 4, 97, 227),
+    background: const Color.fromARGB(255, 169, 205, 255)
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
@@ -15,7 +15,7 @@ final theme = ThemeData(
 void main() {
   runApp(
     const ProviderScope(
-      child: App()
+      child: App(),
     )
   );
 }

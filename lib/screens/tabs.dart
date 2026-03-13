@@ -61,12 +61,12 @@ class TabsScreenState extends ConsumerState<TabsScreen>{
       appBar: AppBar(
         title: Text(activePageTitle),
         centerTitle: true,
-        backgroundColor: ColorScheme.of(context).surface,
+        backgroundColor: ColorScheme.of(context).primary,
       ),
       drawer: MainDrawer(onSelectScreen: _setScreen,),
       body: activePage,
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: ColorScheme.of(context).onSecondary,
+        backgroundColor: ColorScheme.of(context).onPrimary,
         onTap: _selectPage,
         currentIndex: _selectePageIndex,
         items: [
